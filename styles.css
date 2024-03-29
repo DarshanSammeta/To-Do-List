@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  height: 100vh;
+  font-family: serif;
+}
+.todo-app {
+  max-width: 600px;
+  background-color: white;
+  padding: 20px 30px 50px;
+  margin: 120px auto 15px;
+  border-radius: 15px;
+}
+
+.todo-app h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-block-style: none;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 20px;
+  border-radius: 4px solid black;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin-left: 20px;
+  border-block-style: none;
+}
+input[type="text"]:hover::before {
+  border-bottom-style: solid;
+}
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 1.1rem;
+  padding: 10px 6px 10px 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: " ☐";
+  font-size: 25px;
+  position: absolute;
+  left: -1px;
+  top: 4px;
+}
+
+#task-list {
+  padding: 0px 30px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: black;
+}
+
+ul li.checked::before {
+  content: "☑";
+}
+
+ul li span {
+  position: absolute;
+  top: 1.8px;
+  right: 5px;
+  color: red;
+  font-size: 2rem;
+}
+
+/* #task-input {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
